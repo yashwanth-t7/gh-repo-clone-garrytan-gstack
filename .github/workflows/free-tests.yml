@@ -111,7 +111,7 @@ jobs:
         if: env.TRUNK_API_TOKEN != ''
         timeout-minutes: 3
         continue-on-error: true
-        uses: trunk-io/dynamic-ci@5bcddbf3615c2b032c21eed1b514c91164bda4a8 # v0.1.7
+        uses: trunk-io/dynamic-ci@09739668b8d766d05e3dbf6f3eb0159da6597aaf # v1
         env:
           TRUNK_DISABLE_TELEMETRY: 'true'
         with:
@@ -816,7 +816,7 @@ jobs:
         if: env.TRUNK_ORG_API_TOKEN != ''
         timeout-minutes: 5
         continue-on-error: true
-        uses: trunk-io/analytics-uploader@a86313c7029d22e6ea2d5c346060a224d90053dc # v2.1.6
+        uses: trunk-io/analytics-uploader@6bc623e3c4b7a80d7a35badde2a8e8be1e78605d # v3.0.0
         with:
           junit-paths: ${{ runner.temp }}/free-junit/**/*.xml
           org-slug: garry-tan
